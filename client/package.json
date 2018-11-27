@@ -1,0 +1,56 @@
+{
+  "name": "koinworks",
+  "version": "1.0.0",
+  "description": "koinworks testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arifabas/koinworks.git"
+  },
+  "keywords": [
+    "koinworks"
+  ],
+  "author": "arifabas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arifabas/koinworks/issues"
+  },
+  "homepage": "https://github.com/arifabas/koinworks#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "file-loader": "^2.0.0",
+    "image-webpack-loader": "^4.5.0",
+    "jquery": "^1.9.1",
+    "react": "^16.6.3",
+    "react-date-picker": "^7.1.1",
+    "react-dom": "^16.6.3",
+    "react-particles-js": "^2.4.2",
+    "react-redux": "^5.1.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "reactstrap": "^6.5.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "sweetalert2-react": "^0.7.2"
+  }
+}

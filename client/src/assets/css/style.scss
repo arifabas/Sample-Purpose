@@ -1,0 +1,149 @@
+$poppins-font: 'Poppins', sans-serif;
+$white-background: #fff;
+$no-shadow: none !important;
+$font-700: 700;
+$center-for-text: center;
+$absolute-pos: absolute;
+$text-up: uppercase;
+$grey-text: #454545;
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: $poppins-font;
+}
+canvas {
+  top: 0;
+  position: $absolute-pos;
+}
+table {
+  th {
+    font-size: 10pt !important;
+  }
+  td {
+    font-size: 9pt !important;
+  }
+}
+.koinworks-wrapper {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #2b476c,#8f2529);
+  position: $absolute-pos;
+  .koin-logo {
+    margin-top: 25px;
+    text-align: $center-for-text;
+    img {
+      width: 250px;
+    }
+  }
+  .koin-block {
+    width: 50%;
+    min-height: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: $white-background;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    position: relative;
+    z-index: 10 !important;
+    &.full-width {
+      width: 90% !important;
+    }
+    form {
+      h1 {
+        font-family: $poppins-font;
+        font-size: 17pt;
+        font-weight: $font-700;
+        text-transform: $text-up;
+        text-align: $center-for-text;
+        color: $grey-text;
+      }
+      .form-group {
+        margin: 35px 0;
+        textarea {
+          height: 250px;
+        }
+      }
+      label {
+        margin-top: 8px;
+        font-family: $poppins-font;
+        font-size: 12pt;
+        font-weight: $font-700;
+        color: $grey-text;
+      }
+      input[type='file'],
+      input[type='text'],
+      input[type='password'],
+      textarea,
+      select {
+        font-family: $poppins-font;
+        font-size: 11pt;
+        font-weight: 300;
+        color: $grey-text;
+        box-shadow: $no-shadow;
+        -webkit-box-shadow: $no-shadow;
+        -moz-box-shadow: $no-shadow;
+      }
+      .submit {
+        height: 50px;
+        background: #8f2529;
+        font-family: $poppins-font;
+        font-size: 13pt;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: $text-up;
+        color: #fff;
+        cursor: pointer;
+      }
+      .react-date-picker {
+        width: 100%;
+        .react-date-picker__button {
+          display: none !important;
+        }
+        .react-date-picker__wrapper {
+          width: 100%;
+          height: calc(2.25rem + 2px);
+          padding: .375rem .75rem;
+          background-color: $white-background;
+          background-clip: padding-box;
+          font-family: $poppins-font;
+          font-size: 11pt;
+          font-weight: 300;
+          color: $grey-text;
+          border: 1px solid #ced4da;
+          border-radius: .25rem;
+          -webkit-border-radius: .25rem;
+          -moz-border-radius: .25rem;
+          transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+          -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+          -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  body .koin-block {
+    width: 85% !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .koin-block {
+    width: 75% !important;
+  }
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+  table, thead, tbody, td, tr { 
+    display: block; 
+  }
+  th {
+    display: none !important;
+  }
+}
